@@ -1,0 +1,5 @@
+version: '3'
+services:
+  utils:
+    build: .
+    image: mailcraft/utils
