@@ -9,7 +9,7 @@ ENV SSH_KNOWN_HOSTS ${SSH_KNOWN_HOSTS}
 ARG SSH_PRIVATE_KEY
 ENV SSH_PRIVATE_KEY ${SSH_PRIVATE_KEY}
 
-RUN apk add --update --no-cache openssh sshpass rsync tar
+RUN apk add --update --no-cache openssh sshpass rsync tar findutils
 
 COPY docker-entrypoint.sh /entrypoint.sh
 
