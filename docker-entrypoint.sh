@@ -19,4 +19,4 @@ if [ -n "$SSH_PASS" ]; then
     exec sshpass -p ${SSH_PASS} $@
 fi
 
-exec $@
+exec "$@"
